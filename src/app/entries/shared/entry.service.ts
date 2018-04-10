@@ -8,7 +8,7 @@ export class EntryService {
 
     }
     getEntries(): Promise<Entry[]> {
-        return this.http.get('/app/enties')
+        return this.http.get('/app/entries')
         .toPromise()
         .then(response => response.json().data as Entry[]);
     }
